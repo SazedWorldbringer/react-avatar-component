@@ -9,7 +9,7 @@ describe("Avatar", () => {
         const alt = "@github-handle";
         render(<Avatar url={url} alt={alt}/>)
         // grab the image element by it's alt text
-        const img = screen.getByAltText("@github-handle")
+        const img = screen.getByAltText(alt)
         expect(img).toBeInTheDocument();
         expect(img.tagName).toBe("IMG")
     })
