@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
 
-import Avatar from './Avatar'
+import Avatar, { FALLBACK_AVATAR_ALT_TEXT, FALLBACK_AVATAR_URL } from './Avatar'
 
 describe("Avatar", () => {
     it("should render an <img />", () => {
